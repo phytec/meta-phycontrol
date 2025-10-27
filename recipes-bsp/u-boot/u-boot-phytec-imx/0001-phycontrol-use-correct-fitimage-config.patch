@@ -1,0 +1,26 @@
+From 4f287b36eead342bd1e6ce04eb0b7c8503820a85 Mon Sep 17 00:00:00 2001
+From: Leonard Anderweit <l.anderweit@phytec.de>
+Date: Fri, 24 Oct 2025 08:59:20 +0200
+Subject: [PATCH] phycontrol: use correct fitimage config
+
+Signed-off-by: Leonard Anderweit <l.anderweit@phytec.de>
+---
+ board/phytec/phycore_imx8mp/phycore_imx8mp.env | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/board/phytec/phycore_imx8mp/phycore_imx8mp.env b/board/phytec/phycore_imx8mp/phycore_imx8mp.env
+index 20e082c3fe14..09232413c0b0 100644
+--- a/board/phytec/phycore_imx8mp/phycore_imx8mp.env
++++ b/board/phytec/phycore_imx8mp/phycore_imx8mp.env
+@@ -48,7 +48,7 @@ fastboot_raw_partition_all=0 4194304
+ fastboot_raw_partition_bootloader=64 8128
+ fdt_addr_r=0x48000000
+ fdtfile=CONFIG_DEFAULT_FDT_FILE
+-fit_fdtconf=conf-imx8mp-phyboard-pollux-rdk.dtb
++fit_fdtconf=conf-imx8mp-phycontrol-nova.dtb
+ fdtoverlay_addr_r=0x49000000
+ image=Image
+ ipaddr=192.168.3.11
+-- 
+2.25.1
+
