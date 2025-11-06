@@ -1,0 +1,101 @@
+header:
+  version: 14
+  includes:
+    - repo: meta-phytec
+      file: kas/include/poky-local-conf.yml
+
+machine: phycontrol-nova-imx8mp-1
+distro: ampliphy-vendor
+target: phytec-headless-image
+
+defaults:
+  repos:
+    branch: scarthgap
+
+repos:
+  poky:
+    url: https://github.com/yoctoproject/poky
+    layers:
+      meta:
+      meta-poky:
+
+  meta-openembedded:
+    url: https://github.com/openembedded/meta-openembedded
+    layers:
+      meta-oe:
+      meta-networking:
+      meta-python:
+      meta-multimedia:
+      meta-filesystems:
+      meta-perl:
+
+  meta-browser:
+    url: https://github.com/OSSystems/meta-browser
+    commit: dc31889c0899971def535dc1c040edf18bc16691
+    layers:
+      meta-chromium:
+
+  meta-clang:
+    url: https://github.com/kraj/meta-clang
+
+  meta-freescale:
+    url: https://github.com/Freescale/meta-freescale
+
+  meta-freescale-3rdparty:
+    url: https://github.com/Freescale/meta-freescale-3rdparty
+
+  meta-freescale-distro:
+    url: https://github.com/Freescale/meta-freescale-distro
+
+  meta-arm:
+    url: https://git.yoctoproject.org/meta-arm
+    layers:
+      meta-arm:
+      meta-arm-toolchain:
+
+  meta-qt6:
+    url: https://code.qt.io/yocto/meta-qt6
+    branch: 6.7.3
+
+  meta-security:
+    url: https://git.yoctoproject.org/meta-security
+    layers:
+      meta-tpm:
+
+  meta-virtualization:
+    url: git://git.yoctoproject.org/meta-virtualization
+
+  meta-imx:
+    url: https://github.com/nxp-imx/meta-imx
+    branch: null
+    tag: rel_imx_6.6.52_2.2.0
+    layers:
+      meta-imx-bsp:
+      meta-imx-sdk:
+      meta-imx-ml:
+
+  meta-nxp-demo-experience:
+    url: https://github.com/nxp-imx-support/meta-nxp-demo-experience
+    branch: null
+    tag: rel_imx_6.6.52_2.2.0
+
+  meta-rauc:
+    url: https://github.com/rauc/meta-rauc
+
+  meta-phytec:
+    url: https://github.com/phytec/meta-phytec
+
+  meta-phycontrol:
+    url: https://github.com/phytec/meta-phycontrol
+
+  meta-ampliphy:
+    url: https://github.com/phytec/meta-ampliphy
+
+  meta-qt6-phytec:
+    url: https://git.phytec.de/git/meta-qt6-phytec
+
+local_conf_header:
+  custom-local-conf: |
+    ACCEPT_FSL_EULA = "1"
+  oeroot:
+    OEROOT = "${TOPDIR}/../poky"
