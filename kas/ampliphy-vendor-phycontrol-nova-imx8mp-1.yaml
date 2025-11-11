@@ -28,6 +28,7 @@ repos:
       meta-multimedia:
       meta-filesystems:
       meta-perl:
+      meta-gnome:
 
   meta-browser:
     url: https://github.com/OSSystems/meta-browser
@@ -60,6 +61,7 @@ repos:
   meta-security:
     url: https://git.yoctoproject.org/meta-security
     layers:
+      .:
       meta-tpm:
 
   meta-virtualization:
