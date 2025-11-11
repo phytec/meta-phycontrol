@@ -29,6 +29,7 @@ repos:
       meta-filesystems:
       meta-perl:
       meta-gnome:
+      meta-webserver:
 
   meta-browser:
     url: https://github.com/OSSystems/meta-browser
