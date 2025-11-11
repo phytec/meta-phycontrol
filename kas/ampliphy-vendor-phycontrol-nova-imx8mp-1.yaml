@@ -99,5 +99,15 @@ repos:
 local_conf_header:
   custom-local-conf: |
     ACCEPT_FSL_EULA = "1"
+    BB_GIT_SHALLOW = "1"
+    INHERIT += "buildhistory"
+    PACKAGE_CLASSES = "package_ipk"
+    EXTRA_IMAGE_FEATURES = ""
+    EXTRA_IMAGE_FEATURES += " \
+        allow-empty-password \
+        allow-root-login \
+        empty-root-password \
+        post-install-logging \
+    "
   oeroot:
     OEROOT = "${TOPDIR}/../poky"
