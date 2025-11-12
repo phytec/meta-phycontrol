@@ -14,6 +14,9 @@ DEPENDS += "nodejs-native"
 
 RDEPENDS:${PN} = "cockpit"
 
+# Makefile uses "git fetch", which needs network access
+do_compile[network] = "1"
+
 FILES:${PN} = " \
    /usr/local/share/cockpit/podman \
    /usr/local/share/metainfo \
