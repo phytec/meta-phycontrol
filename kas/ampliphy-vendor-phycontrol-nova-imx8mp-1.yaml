@@ -6,7 +6,7 @@ header:
 
 machine: phycontrol-nova-imx8mp-1
 distro: ampliphy-vendor
-target: phytec-headless-image
+target: phycontrol-image
 
 defaults:
   repos:
