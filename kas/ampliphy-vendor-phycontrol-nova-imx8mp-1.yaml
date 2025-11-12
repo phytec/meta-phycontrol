@@ -85,6 +85,9 @@ repos:
   meta-rauc:
     url: https://github.com/rauc/meta-rauc
 
+  meta-hilscher-drivers:
+    url: https://github.com/HilscherAutomation/meta-hilscher-drivers
+
   meta-phytec:
     url: https://github.com/phytec/meta-phytec
 
