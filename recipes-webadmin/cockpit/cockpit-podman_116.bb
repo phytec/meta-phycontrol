@@ -11,8 +11,8 @@ inherit gettext
 S = "${WORKDIR}/git"
 
 DEPENDS += "nodejs-native"
+RDEPENDS:${PN} = "cockpit podman"
 
-RDEPENDS:${PN} = "cockpit"
 EXTRA_OEMAKE = "PREFIX=${prefix} DESTDIR=${D}"
 
 # Makefile uses "git fetch", which needs network access
