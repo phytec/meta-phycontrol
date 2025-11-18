@@ -82,6 +82,9 @@ repos:
     branch: null
     tag: rel_imx_6.6.52_2.2.0
 
+  meta-iot-cloud:
+    url: https://github.com/intel-iot-devkit/meta-iot-cloud.git
+
   meta-rauc:
     url: https://github.com/rauc/meta-rauc
 
