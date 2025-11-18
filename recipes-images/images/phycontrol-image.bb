@@ -19,4 +19,5 @@ IMAGE_INSTALL:append = " \
     cockpit-podman \
     opkg-phytec-config \
     thingsboard-gateway \
+    node-red \
 "
