@@ -17,4 +17,5 @@ IMAGE_INSTALL:append = " \
     cockpit-kdump \
     cockpit-playground \
     cockpit-podman \
+    opkg-phytec-config \
 "
