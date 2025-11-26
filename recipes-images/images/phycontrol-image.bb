@@ -18,4 +18,5 @@ IMAGE_INSTALL:append = " \
     cockpit-playground \
     cockpit-podman \
     opkg-phytec-config \
+    thingsboard-gateway \
 "
