@@ -3,6 +3,8 @@ DESCRIPTION = "A complete image containing commonly-used software for phyCONTROL
 
 require recipes-images/images/phytec-container-image.bb
 
+IMAGE_FEATURES += "package-management"
+
 IMAGE_INSTALL:append = " \
     cockpit \
     cockpit-systemd \
