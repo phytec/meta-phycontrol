@@ -15,6 +15,8 @@ IMAGE_INSTALL:append = " \
     cockpit-kdump \
     cockpit-playground \
     cockpit-podman \
+    nodejs \
+    nodejs-npm \
     opkg-phytec-config \
     thingsboard-gateway \
 "
