@@ -1,4 +1,5 @@
-SUMMARY = ""
+SUMMARY = "phyCONTROL gateway image"
+DESCRIPTION = "A complete image containing commonly-used software for phyCONTROL gateways"
 
 require recipes-images/images/phytec-container-image.bb
 
