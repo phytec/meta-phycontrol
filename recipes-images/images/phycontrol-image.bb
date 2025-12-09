@@ -19,6 +19,6 @@ IMAGE_INSTALL:append = " \
     cockpit-podman \
     nodejs \
     nodejs-npm \
-    opkg-phytec-config \
+    dnf-phytec-config \
     thingsboard-gateway \
 "
