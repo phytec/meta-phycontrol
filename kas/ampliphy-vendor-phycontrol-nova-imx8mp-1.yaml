@@ -102,7 +102,7 @@ local_conf_header:
     ACCEPT_FSL_EULA = "1"
     BB_GIT_SHALLOW = "1"
     INHERIT += "buildhistory"
-    PACKAGE_CLASSES = "package_ipk"
+    PACKAGE_CLASSES = "package_rpm"
     EXTRA_IMAGE_FEATURES = ""
     EXTRA_IMAGE_FEATURES += " \
         allow-empty-password \
