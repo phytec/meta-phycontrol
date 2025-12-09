@@ -1,0 +1,4 @@
+[phytec-packages]
+name=phytec-packages
+baseurl=${PACKAGE_FEED_SERVER}
+gpgcheck=0

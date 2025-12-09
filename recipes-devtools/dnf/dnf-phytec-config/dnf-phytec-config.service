@@ -1,0 +1,13 @@
+[Unit]
+Description=Initialize DNF configuration and cache
+ConditionPathExists=/etc/yum.repos.d/phytec-packages.repo.example
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/mv /etc/yum.repos.d/phytec-packages.repo.example /etc/yum.repos.d/phytec-packages.repo
+ExecStart=/usr/bin/dnf makecache
+
+[Install]
+WantedBy=sysinit.target
