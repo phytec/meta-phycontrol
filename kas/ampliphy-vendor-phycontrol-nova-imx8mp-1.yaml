@@ -113,6 +113,6 @@ local_conf_header:
     BB_HASHSERVE = "auto"
     #BB_HASHSERVE_UPSTREAM = "XXX.XXX.XXX.XXX:8585"
     #PRSERV_HOST = "XXX.XXX.XXX.XXX:8685"
-    #OPKG_SERVER = "http://XXX.XXX.XXX.XXX"
+    #PACKAGE_FEED_SERVER = "http://XXX.XXX.XXX.XXX"
   oeroot:
     OEROOT = "${TOPDIR}/../poky"
