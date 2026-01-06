@@ -4,10 +4,6 @@ header:
     - repo: meta-phytec
       file: kas/include/poky-local-conf.yml
 
-machine: phycontrol-nova-imx8mp-1
-distro: ampliphy-vendor-rt
-target: phycontrol-image
-
 defaults:
   repos:
     branch: scarthgap
@@ -110,6 +106,8 @@ local_conf_header:
         empty-root-password \
         post-install-logging \
     "
+    TMPDIR = "${TOPDIR}/tmp-${DISTRO}"
+    DEPLOY_DIR = "${TOPDIR}/deploy-${DISTRO}"
     BB_HASHSERVE = "auto"
     #BB_HASHSERVE_UPSTREAM = "XXX.XXX.XXX.XXX:8585"
     #PRSERV_HOST = "XXX.XXX.XXX.XXX:8685"
