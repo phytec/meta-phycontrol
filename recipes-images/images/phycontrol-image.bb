@@ -17,6 +17,7 @@ IMAGE_INSTALL:append = " \
     cockpit-kdump \
     cockpit-playground \
     cockpit-podman \
+    libgpiod-dev \
     make \
     nodejs \
     nodejs-npm \
