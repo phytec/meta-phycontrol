@@ -1,0 +1,10 @@
+header:
+  version: 14
+  includes:
+    - kas/include/phycontrol.yaml
+
+machine: phycontrol-nova-imx8mp-1
+distro: ampliphy-vendor-rauc-rt
+target:
+  - phycontrol-image
+  - phycontrol-bundle
