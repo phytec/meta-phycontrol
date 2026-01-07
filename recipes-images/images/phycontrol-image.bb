@@ -17,6 +17,7 @@ IMAGE_INSTALL:append = " \
     cockpit-kdump \
     cockpit-playground \
     cockpit-podman \
+    make \
     nodejs \
     nodejs-npm \
     dnf-phytec-config \
