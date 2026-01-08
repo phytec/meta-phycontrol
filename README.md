@@ -27,11 +27,11 @@ git clone https://github.com/phytec/meta-phycontrol
 ```
 Use kas to checkout all required meta layers:
 ```
-kas checkout meta-phycontrol/kas/ampliphy-vendor-phycontrol-nova-imx8mp-1.yaml
+kas checkout meta-phycontrol/kas/ampliphy-vendor-rt-phycontrol-nova-imx8mp-1.yaml
 ```
 Then build the BSP:
 ```
-kas build meta-phycontrol/kas/ampliphy-vendor-phycontrol-nova-imx8mp-1.yaml
+kas build meta-phycontrol/kas/ampliphy-vendor-rt-phycontrol-nova-imx8mp-1.yaml
 ```
 
 > **Note**
@@ -39,7 +39,7 @@ kas build meta-phycontrol/kas/ampliphy-vendor-phycontrol-nova-imx8mp-1.yaml
 > In case you don't have a [supported distribution](https://docs.yoctoproject.org/scarthgap/singleindex.html#supported-linux-distributions),
 > use `kas-container` instead of running `kas` natively:
 > ```
-> KAS_CONTAINER_IMAGE_DISTRO=debian-bookworm kas-container build meta-phycontrol/kas/ampliphy-vendor-phycontrol-nova-imx8mp-1.yaml
+> KAS_CONTAINER_IMAGE_DISTRO=debian-bookworm kas-container build meta-phycontrol/kas/ampliphy-vendor-rt-phycontrol-nova-imx8mp-1.yaml
 > ```
 
 Reporting issues and contributing code
