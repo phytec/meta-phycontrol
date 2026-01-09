@@ -1,0 +1,38 @@
+header:
+  version: 14
+overrides:
+  repos:
+    poky:
+      commit: 72983ac391008ebceb45edc7a8f0f6d5f4fe715c
+    meta-openembedded:
+      commit: 2b26d30fc7f478f5735d514f0c1bc28f6a4148b6
+    meta-clang:
+      commit: 5c602337ea1a80fb7217eeda04e396cf90587dca
+    meta-freescale:
+      commit: 902dde8c5bd29bb507ac8d37772565a6c9ab77cd
+    meta-freescale-3rdparty:
+      commit: 70c83e96c7f75e73245cb77f1b0cada9ed4bbc6d
+    meta-freescale-distro:
+      commit: b9d6a5d9931922558046d230c1f5f4ef6ee72345
+    meta-arm:
+      commit: a81c19915b5b9e71ed394032e9a50fd06919e1cd
+    meta-qt6:
+      commit: 9e6928ef66bced84ec3eecfdac00a3540b0a6479
+    meta-security:
+      commit: afbbe28cee4af2c6760aaead43a4a3ef29969809
+    meta-virtualization:
+      commit: f92518e20530edfebca45e4170e11460949a5303
+    meta-imx:
+      commit: a0cf309d2e2d544111e520f572db8dff335eca01
+    meta-nxp-demo-experience:
+      commit: e8e646e22b1f926aac83bb7ad522efa9cd8ccc45
+    meta-rauc:
+      commit: a0f4a8b9986954239850b9d4256c003c91e6b931
+    meta-phytec:
+      commit: 65171565e48577225fd591850de44dc17cc2f6f1
+    meta-phycontrol:
+      commit: 045a3cc9f288dcd6681fde2c07887215c715bb29
+    meta-ampliphy:
+      commit: 038140e60a906dc00b9767100c65b5f0a812cb2d
+    meta-qt6-phytec:
+      commit: 1255695c66b21a863c5c7d0149214b8ed429cc1a
